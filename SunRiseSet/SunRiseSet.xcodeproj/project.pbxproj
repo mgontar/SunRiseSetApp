@@ -12,8 +12,6 @@
 		841B244421C56AF2002DE193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841B244221C56AF2002DE193 /* Main.storyboard */; };
 		841B244621C56AF5002DE193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841B244521C56AF5002DE193 /* Assets.xcassets */; };
 		841B244921C56AF5002DE193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841B244721C56AF5002DE193 /* LaunchScreen.storyboard */; };
-		841B245421C56AF5002DE193 /* SunRiseSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B245321C56AF5002DE193 /* SunRiseSetTests.swift */; };
-		841B245F21C56AF5002DE193 /* SunRiseSetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B245E21C56AF5002DE193 /* SunRiseSetUITests.swift */; };
 		845F016B21C79A210072D796 /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F016A21C79A210072D796 /* AddPlaceViewController.swift */; };
 		845F017021C79A690072D796 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F016F21C79A690072D796 /* Place.swift */; };
 		845F017221C79B470072D796 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F017121C79B470072D796 /* WebAPI.swift */; };
@@ -24,26 +22,7 @@
 		845F017E21C7CC680072D796 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845F017C21C7CC680072D796 /* PlaceCell.xib */; };
 		845F018021C7D9C00072D796 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F017F21C7D9C00072D796 /* GooglePlacesManager.swift */; };
 		E9C6416902CFA2FA2123DD1D /* Pods_SunRiseSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26EE30FB2109C72B7487478 /* Pods_SunRiseSet.framework */; };
-		F57379C62FAB64197B8ABAC7 /* Pods_SunRiseSetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6237E710E0F4BE9BA37B3D3C /* Pods_SunRiseSetTests.framework */; };
-		F7B40066316701756815CDA3 /* Pods_SunRiseSetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBA41B1BDED2137CCB46A41 /* Pods_SunRiseSetUITests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		841B245021C56AF5002DE193 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 841B243321C56AF2002DE193 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 841B243A21C56AF2002DE193;
-			remoteInfo = SunRiseSet;
-		};
-		841B245B21C56AF5002DE193 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 841B243321C56AF2002DE193 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 841B243A21C56AF2002DE193;
-			remoteInfo = SunRiseSet;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		354D7CC950E2AEECF55EF36A /* Pods-SunRiseSet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunRiseSet.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunRiseSet/Pods-SunRiseSet.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,12 +37,6 @@
 		841B244521C56AF5002DE193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841B244821C56AF5002DE193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841B244A21C56AF5002DE193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		841B244F21C56AF5002DE193 /* SunRiseSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunRiseSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		841B245321C56AF5002DE193 /* SunRiseSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunRiseSetTests.swift; sourceTree = "<group>"; };
-		841B245521C56AF5002DE193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		841B245A21C56AF5002DE193 /* SunRiseSetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunRiseSetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		841B245E21C56AF5002DE193 /* SunRiseSetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunRiseSetUITests.swift; sourceTree = "<group>"; };
-		841B246021C56AF5002DE193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845F016A21C79A210072D796 /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
 		845F016F21C79A690072D796 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		845F017121C79B470072D796 /* WebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
@@ -85,22 +58,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C6416902CFA2FA2123DD1D /* Pods_SunRiseSet.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841B244C21C56AF5002DE193 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F57379C62FAB64197B8ABAC7 /* Pods_SunRiseSetTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841B245721C56AF5002DE193 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7B40066316701756815CDA3 /* Pods_SunRiseSetUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				841B243D21C56AF2002DE193 /* SunRiseSet */,
-				841B245221C56AF5002DE193 /* SunRiseSetTests */,
-				841B245D21C56AF5002DE193 /* SunRiseSetUITests */,
 				841B243C21C56AF2002DE193 /* Products */,
 				693E642B9036B7E1CD11FCA9 /* Pods */,
 				08AC8F331A68B4932B1B28BD /* Frameworks */,
@@ -146,8 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				841B243B21C56AF2002DE193 /* SunRiseSet.app */,
-				841B244F21C56AF5002DE193 /* SunRiseSetTests.xctest */,
-				841B245A21C56AF5002DE193 /* SunRiseSetUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,24 +115,6 @@
 				841B244A21C56AF5002DE193 /* Info.plist */,
 			);
 			path = SunRiseSet;
-			sourceTree = "<group>";
-		};
-		841B245221C56AF5002DE193 /* SunRiseSetTests */ = {
-			isa = PBXGroup;
-			children = (
-				841B245321C56AF5002DE193 /* SunRiseSetTests.swift */,
-				841B245521C56AF5002DE193 /* Info.plist */,
-			);
-			path = SunRiseSetTests;
-			sourceTree = "<group>";
-		};
-		841B245D21C56AF5002DE193 /* SunRiseSetUITests */ = {
-			isa = PBXGroup;
-			children = (
-				841B245E21C56AF5002DE193 /* SunRiseSetUITests.swift */,
-				841B246021C56AF5002DE193 /* Info.plist */,
-			);
-			path = SunRiseSetUITests;
 			sourceTree = "<group>";
 		};
 		845F016C21C79A2E0072D796 /* Model */ = {
@@ -239,44 +174,6 @@
 			productReference = 841B243B21C56AF2002DE193 /* SunRiseSet.app */;
 			productType = "com.apple.product-type.application";
 		};
-		841B244E21C56AF5002DE193 /* SunRiseSetTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 841B246621C56AF5002DE193 /* Build configuration list for PBXNativeTarget "SunRiseSetTests" */;
-			buildPhases = (
-				3D9057673435D53CC1F1B3DD /* [CP] Check Pods Manifest.lock */,
-				841B244B21C56AF5002DE193 /* Sources */,
-				841B244C21C56AF5002DE193 /* Frameworks */,
-				841B244D21C56AF5002DE193 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				841B245121C56AF5002DE193 /* PBXTargetDependency */,
-			);
-			name = SunRiseSetTests;
-			productName = SunRiseSetTests;
-			productReference = 841B244F21C56AF5002DE193 /* SunRiseSetTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		841B245921C56AF5002DE193 /* SunRiseSetUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 841B246921C56AF5002DE193 /* Build configuration list for PBXNativeTarget "SunRiseSetUITests" */;
-			buildPhases = (
-				242D5D28A6C5A312CAAE0ACC /* [CP] Check Pods Manifest.lock */,
-				841B245621C56AF5002DE193 /* Sources */,
-				841B245721C56AF5002DE193 /* Frameworks */,
-				841B245821C56AF5002DE193 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				841B245C21C56AF5002DE193 /* PBXTargetDependency */,
-			);
-			name = SunRiseSetUITests;
-			productName = SunRiseSetUITests;
-			productReference = 841B245A21C56AF5002DE193 /* SunRiseSetUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -289,14 +186,6 @@
 				TargetAttributes = {
 					841B243A21C56AF2002DE193 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					841B244E21C56AF5002DE193 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 841B243A21C56AF2002DE193;
-					};
-					841B245921C56AF5002DE193 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 841B243A21C56AF2002DE193;
 					};
 				};
 			};
@@ -314,8 +203,6 @@
 			projectRoot = "";
 			targets = (
 				841B243A21C56AF2002DE193 /* SunRiseSet */,
-				841B244E21C56AF5002DE193 /* SunRiseSetTests */,
-				841B245921C56AF5002DE193 /* SunRiseSetUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,67 +219,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		841B244D21C56AF5002DE193 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841B245821C56AF5002DE193 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		242D5D28A6C5A312CAAE0ACC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SunRiseSetUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D9057673435D53CC1F1B3DD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SunRiseSetTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		823BCB254DB0B004AED2B044 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,36 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		841B244B21C56AF5002DE193 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				841B245421C56AF5002DE193 /* SunRiseSetTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841B245621C56AF5002DE193 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				841B245F21C56AF5002DE193 /* SunRiseSetUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		841B245121C56AF5002DE193 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 841B243A21C56AF2002DE193 /* SunRiseSet */;
-			targetProxy = 841B245021C56AF5002DE193 /* PBXContainerItemProxy */;
-		};
-		841B245C21C56AF5002DE193 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 841B243A21C56AF2002DE193 /* SunRiseSet */;
-			targetProxy = 841B245B21C56AF5002DE193 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		841B244221C56AF2002DE193 /* Main.storyboard */ = {
@@ -692,92 +492,6 @@
 			};
 			name = Release;
 		};
-		841B246721C56AF5002DE193 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 997EE4F0661D1FA6635A845A /* Pods-SunRiseSetTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CV388556QG;
-				INFOPLIST_FILE = SunRiseSetTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mg.SunRiseSetTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunRiseSet.app/SunRiseSet";
-			};
-			name = Debug;
-		};
-		841B246821C56AF5002DE193 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8701613C6FEFFA6D6444C920 /* Pods-SunRiseSetTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CV388556QG;
-				INFOPLIST_FILE = SunRiseSetTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mg.SunRiseSetTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SunRiseSet.app/SunRiseSet";
-			};
-			name = Release;
-		};
-		841B246A21C56AF5002DE193 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AC9EC524229C92D747F7CF8 /* Pods-SunRiseSetUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CV388556QG;
-				INFOPLIST_FILE = SunRiseSetUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mg.SunRiseSetUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SunRiseSet;
-			};
-			name = Debug;
-		};
-		841B246B21C56AF5002DE193 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAA44BE4088B2F04836D7398 /* Pods-SunRiseSetUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CV388556QG;
-				INFOPLIST_FILE = SunRiseSetUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mg.SunRiseSetUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SunRiseSet;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -795,24 +509,6 @@
 			buildConfigurations = (
 				841B246421C56AF5002DE193 /* Debug */,
 				841B246521C56AF5002DE193 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		841B246621C56AF5002DE193 /* Build configuration list for PBXNativeTarget "SunRiseSetTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				841B246721C56AF5002DE193 /* Debug */,
-				841B246821C56AF5002DE193 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		841B246921C56AF5002DE193 /* Build configuration list for PBXNativeTarget "SunRiseSetUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				841B246A21C56AF5002DE193 /* Debug */,
-				841B246B21C56AF5002DE193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
