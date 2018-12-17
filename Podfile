@@ -9,14 +9,4 @@ target 'SunRiseSet' do
   pod 'GooglePlaces'
   pod 'NotificationBannerSwift'
 
-  target 'SunRiseSetTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'SunRiseSetUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
