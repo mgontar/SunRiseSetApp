@@ -11,8 +11,8 @@ import CoreLocation
 import NotificationBannerSwift
 
 class PlacesViewController: UIViewController {
-    @IBOutlet weak var tbPlaces: UITableView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var placesTableView: UITableView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     private let refreshControl = UIRefreshControl()
     
     var googlePlacesManager:GooglePlacesManager!
@@ -31,18 +31,10 @@ class PlacesViewController: UIViewController {
         locationManager.delegate = self
         
         switch CLLocationManager.authorizationStatus() {
-        case .notDetermined:
-            break
-        case .authorizedWhenInUse:
-            break
-        case .authorizedAlways:
-            break
-        case .restricted:
+        case .notDetermined,
+            .restricted,
+            .denied:
             locationManager.requestWhenInUseAuthorization()
-            break
-        case .denied:
-            locationManager.requestWhenInUseAuthorization()
-            break
         default:
             locationManager.requestWhenInUseAuthorization()
             break
@@ -52,16 +44,16 @@ class PlacesViewController: UIViewController {
     func setupTableView() {
         self.refreshControl.tintColor = .black
         if #available(iOS 10.0, *) {
-            self.tbPlaces.refreshControl = refreshControl
+            self.placesTableView.refreshControl = refreshControl
         } else {
-            self.tbPlaces.addSubview(refreshControl)
+            self.placesTableView.addSubview(refreshControl)
         }
-        self.tbPlaces.rowHeight = UITableView.automaticDimension
-        self.tbPlaces.estimatedRowHeight = 120
+        self.placesTableView.rowHeight = UITableView.automaticDimension
+        self.placesTableView.estimatedRowHeight = 120
         self.refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
         let nib = UINib(nibName: PlaceCell.nibName, bundle: nil)
-        self.tbPlaces.register(nib, forCellReuseIdentifier: PlaceCell.identifier)
-        self.tbPlaces.dataSource = self
+        self.placesTableView.register(nib, forCellReuseIdentifier: PlaceCell.identifier)
+        self.placesTableView.dataSource = self
     }
     
     @objc private func refreshData(_ sender: Any) {
@@ -71,7 +63,7 @@ class PlacesViewController: UIViewController {
     private func fetchData(isPull:Bool = false) {
         
         if !isPull {
-            activityIndicator.startAnimating()
+            activityIndicatorView.startAnimating()
         }
         
         googlePlacesManager.getCurrentPlace() { (coordinate, formattedAddress, error) in
@@ -82,7 +74,7 @@ class PlacesViewController: UIViewController {
                     banner.show()
                     self.refreshControl.endRefreshing()
                     if !isPull {
-                        self.activityIndicator.stopAnimating()
+                        self.activityIndicatorView.stopAnimating()
                     }
                 }
             }
@@ -100,16 +92,16 @@ class PlacesViewController: UIViewController {
                 }
                 
                 DispatchQueue.main.async {
-                    self.tbPlaces.reloadData()
+                    self.placesTableView.reloadData()
                 }
                 
                 WebAPI.getSunInfoForCoordinate(self.currentPlace!.coordinate, completionHandler: { (sunInfoResults, error) in
                     self.currentPlace?.sunInfoResults = sunInfoResults
                     DispatchQueue.main.async {
-                        self.tbPlaces.reloadData()
+                        self.placesTableView.reloadData()
                         self.refreshControl.endRefreshing()
                         if !isPull {
-                            self.activityIndicator.stopAnimating()
+                            self.activityIndicatorView.stopAnimating()
                         }
                     }
                 })
@@ -131,15 +123,9 @@ extension PlacesViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus)
     {
         switch status {
-        case .notDetermined:
+        case .authorizedWhenInUse,
+             .authorizedAlways:
             fetchData()
-            break
-        case .authorizedWhenInUse:
-            fetchData()
-            break
-        case .authorizedAlways:
-            fetchData()
-            break
         case .restricted:
             // restricted by e.g. parental controls. User can't enable Location Services
             break
@@ -159,16 +145,16 @@ extension PlacesViewController: AddPlaceViewControllerDelegate {
         self.places.append(place)
         
         DispatchQueue.main.async {
-            self.tbPlaces.reloadData()
-            self.activityIndicator.startAnimating()
+            self.placesTableView.reloadData()
+            self.activityIndicatorView.startAnimating()
         }
         
         WebAPI.getSunInfoForCoordinate(place.coordinate, completionHandler: { (sunInfoResults, error) in
             place.sunInfoResults = sunInfoResults
             DispatchQueue.main.async {
-                self.tbPlaces.reloadData()
+                self.placesTableView.reloadData()
                 self.refreshControl.endRefreshing()
-                self.activityIndicator.stopAnimating()
+                self.activityIndicatorView.stopAnimating()
             }
         })
     }

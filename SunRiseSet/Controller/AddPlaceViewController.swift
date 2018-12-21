@@ -16,8 +16,8 @@ protocol AddPlaceViewControllerDelegate: class {
 
 class AddPlaceViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var tbSearchResults: UITableView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var searchResultsTableView: UITableView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     static let identifier = "AddPlaceViewController"
     weak var delegate:AddPlaceViewControllerDelegate?
@@ -38,13 +38,13 @@ class AddPlaceViewController: UIViewController {
     }
     
     func setupTable(){
-        tbSearchResults.delegate = self
-        tbSearchResults.dataSource = self
+        searchResultsTableView.delegate = self
+        searchResultsTableView.dataSource = self
         
         // Hide empty cells
-        tbSearchResults.tableFooterView = UIView()
+        searchResultsTableView.tableFooterView = UIView()
         
-        tbSearchResults.reloadData()
+        searchResultsTableView.reloadData()
     }
     
     func setupPlaceFetcher(){
@@ -74,7 +74,7 @@ extension AddPlaceViewController: GMSAutocompleteFetcherDelegate {
         for prediction in predictions{
             tableData.append(prediction)
         }
-        tbSearchResults.reloadData()
+        searchResultsTableView.reloadData()
     }
     
     func didFailAutocompleteWithError(_ error: Error) {
@@ -87,12 +87,12 @@ extension AddPlaceViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(tableData[indexPath.row])
         if let placeID = tableData[indexPath.row].placeID {
-            self.activityIndicator.startAnimating()
+            self.activityIndicatorView.startAnimating()
             googlePlacesManager.getPlaceByID(placeID) { (coordinate, formattedAddress, error) in
                 
                 if error != nil {
                     DispatchQueue.main.async {
-                        self.activityIndicator.stopAnimating()
+                        self.activityIndicatorView.stopAnimating()
                         let banner = StatusBarNotificationBanner(title: "Error receiving place address", style: .danger)
                         banner.show()
                         
@@ -100,7 +100,7 @@ extension AddPlaceViewController: UITableViewDelegate {
                 }
                 else {
                     DispatchQueue.main.async {
-                        self.activityIndicator.stopAnimating()
+                        self.activityIndicatorView.stopAnimating()
                         self.delegate?.addPlace(coordinate: coordinate!, name: formattedAddress ?? "Unknown")
                         self.navigationController?.popViewController(animated: true)
                     }

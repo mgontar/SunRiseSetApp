@@ -55,27 +55,3 @@ struct SunInfo: Decodable {
         }
     }
 }
-
-extension SunInfo {
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        status = try values.decode(Status.self, forKey: .status)
-        results = try values.decode(Results.self, forKey: .results)
-    }
-}
-
-extension SunInfo.Results {
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        sunrise = try values.decode(Date.self, forKey: .sunrise)
-        sunset = try values.decode(Date.self, forKey: .sunset)
-        solarNoon = try values.decode(Date.self, forKey: .solarNoon)
-        dayLenght = try values.decode(Int.self, forKey: .dayLenght)
-        civilTwilightBegin = try values.decode(Date.self, forKey: .civilTwilightBegin)
-        civilTwilightEnd = try values.decode(Date.self, forKey: .civilTwilightEnd)
-        nauticalTwilightBegin = try values.decode(Date.self, forKey: .nauticalTwilightBegin)
-        nauticalTwilightEnd = try values.decode(Date.self, forKey: .nauticalTwilightEnd)
-        astronomicalTwilightBegin = try values.decode(Date.self, forKey: .astronomicalTwilightBegin)
-        astronomicalTwilightEnd = try values.decode(Date.self, forKey: .astronomicalTwilightEnd)
-    }
-}
